@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "autoPort": true,
+  "configurations": [
+    {
+      "name": "frontend",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["webpack", "serve", "--config", "webpack.config.js"],
+      "port": 5173
+    }
+  ]
+}

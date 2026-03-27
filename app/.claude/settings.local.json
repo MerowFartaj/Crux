@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__plugin_playwright_playwright__browser_navigate",
+      "mcp__plugin_playwright_playwright__browser_take_screenshot",
+      "mcp__plugin_playwright_playwright__browser_evaluate",
+      "mcp__plugin_playwright_playwright__browser_resize",
+      "Read(//Users/merowfartaj/Downloads/**)",
+      "Read(//Users/merowfartaj/Projects/**)",
+      "Read(//Users/merowfartaj/**)",
+      "Bash(mv /Users/merowfartaj/Downloads/nexus-terminal/crux-*.png /Users/merowfartaj/Downloads/crux-website/)",
+      "Bash(ls /Users/merowfartaj/Downloads/nexus-terminal/crux-*.png)"
+    ]
+  }
+}

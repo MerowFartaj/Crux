@@ -1,0 +1,81 @@
+{
+  "name": "crux-terminal",
+  "version": "1.0.0",
+  "description": "CRUX - A reimagined terminal for 2026",
+  "main": "dist/main/index.js",
+  "scripts": {
+    "start": "npm run build && electron .",
+    "build": "tsc && npx webpack --config webpack.config.js --mode production",
+    "build:main": "tsc",
+    "build:renderer": "webpack --config webpack.config.js",
+    "dev": "concurrently \"npm run dev:main\" \"npm run dev:renderer\"",
+    "dev:main": "tsc -p tsconfig.main.json --watch",
+    "dev:renderer": "webpack serve --config webpack.config.js",
+    "dist": "npm run build && electron-builder",
+    "test:e2e": "npm run build && npx playwright test --config playwright.config.ts",
+    "test:e2e:headed": "npm run build && npx playwright test --config playwright.config.ts --headed",
+    "test:e2e:debug": "npm run build && npx playwright test --config playwright.config.ts --debug",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@types/marked": "^5.0.2",
+    "@xterm/addon-fit": "^0.10.0",
+    "@xterm/addon-ligatures": "^0.10.0",
+    "@xterm/addon-search": "^0.16.0",
+    "@xterm/addon-unicode11": "^0.8.0",
+    "@xterm/addon-web-links": "^0.11.0",
+    "@xterm/addon-webgl": "^0.18.0",
+    "@xterm/xterm": "^5.5.0",
+    "better-sqlite3": "^11.7.0",
+    "electron-store": "^8.2.0",
+    "fuse.js": "^7.0.0",
+    "highlight.js": "^11.11.1",
+    "marked": "^17.0.5",
+    "node-pty": "^1.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "systeminformation": "^5.23.0",
+    "zustand": "^4.5.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/better-sqlite3": "^7.6.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "concurrently": "^9.1.0",
+    "copy-webpack-plugin": "^12.0.0",
+    "css-loader": "^7.1.0",
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.0",
+    "html-webpack-plugin": "^5.6.0",
+    "postcss": "^8.4.0",
+    "postcss-loader": "^8.1.0",
+    "style-loader": "^4.0.0",
+    "tailwindcss": "^3.4.0",
+    "ts-loader": "^9.5.0",
+    "typescript": "^5.7.0",
+    "webpack": "^5.97.0",
+    "webpack-cli": "^5.1.0",
+    "webpack-dev-server": "^5.2.0"
+  },
+  "build": {
+    "appId": "com.crux.terminal",
+    "productName": "CRUX",
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "target": "dmg",
+      "icon": "assets/icon.icns"
+    },
+    "files": [
+      "dist/**/*",
+      "assets/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "assets/sounds",
+        "to": "sounds"
+      }
+    ]
+  }
+}
