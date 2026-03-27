@@ -64,7 +64,7 @@ export default function DownloadCTA() {
           </Link>
 
           <a
-            href="https://github.com"
+            href="https://github.com/MerowFartaj/Crux"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-10 py-5 rounded-full border border-crux-border text-crux-text font-medium hover:border-crux-caption/50 hover:bg-white/[0.03] transition-all duration-300"

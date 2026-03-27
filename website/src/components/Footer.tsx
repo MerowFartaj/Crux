@@ -17,7 +17,7 @@ export default function Footer() {
         {/* Center links */}
         <div className="flex items-center gap-8">
           <a
-            href="https://github.com"
+            href="https://github.com/MerowFartaj/Crux"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-crux-muted hover:text-crux-text transition-colors duration-200"

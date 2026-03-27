@@ -90,7 +90,7 @@ export default function Hero() {
           </Link>
 
           <a
-            href="https://github.com"
+            href="https://github.com/MerowFartaj/Crux"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border border-crux-border text-crux-text font-medium text-sm hover:border-crux-caption/50 hover:bg-white/[0.03] transition-all duration-300"

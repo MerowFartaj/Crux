@@ -1,5 +1,6 @@
 import Navigation from '@/components/Navigation'
 import Hero from '@/components/Hero'
+import ScrollVideo from '@/components/ScrollVideo'
 import WhyCrux from '@/components/WhyCrux'
 import FeatureShowcase from '@/components/FeatureShowcase'
 import BentoGrid from '@/components/BentoGrid'
@@ -13,6 +14,7 @@ export default function Home() {
     <main className="relative">
       <Navigation />
       <Hero />
+      <ScrollVideo />
       <WhyCrux />
       <FeatureShowcase />
       <BentoGrid />

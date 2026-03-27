@@ -108,7 +108,7 @@ export default function DownloadPage() {
             className="mt-8 text-sm text-crux-muted"
           >
             Looking for older versions?{' '}
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-crux-accent hover:underline">
+            <a href="https://github.com/MerowFartaj/Crux" target="_blank" rel="noopener noreferrer" className="text-crux-accent hover:underline">
               View all releases on GitHub
             </a>
           </motion.p>

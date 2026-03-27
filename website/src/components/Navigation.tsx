@@ -18,7 +18,7 @@ export default function Navigation() {
     { href: '#features', label: 'Features' },
     { href: '/download', label: 'Download' },
     { href: '/changelog', label: 'Changelog' },
-    { href: 'https://github.com', label: 'GitHub', external: true },
+    { href: 'https://github.com/MerowFartaj/Crux', label: 'GitHub', external: true },
   ]
 
   return (
