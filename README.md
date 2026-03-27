@@ -1,197 +1,160 @@
 <p align="center">
-  <img src="assets/banner.png" alt="CRUX Terminal" width="720" />
-</p>
-
-<h3 align="center">A modern, GPU-accelerated terminal for macOS.<br/>AI-native, local-first, no account required.</h3>
-
-<p align="center">
-  <a href="https://github.com/MerowFartaj/Crux/stargazers"><img src="https://img.shields.io/github/stars/MerowFartaj/Crux?style=flat-square&color=f59e0b" alt="Stars" /></a>
-  <a href="https://github.com/MerowFartaj/Crux/blob/main/LICENSE"><img src="https://img.shields.io/github/license/MerowFartaj/Crux?style=flat-square&color=10b981" alt="License" /></a>
-  <img src="https://img.shields.io/badge/platform-macOS-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS" />
-  <img src="https://img.shields.io/badge/electron-33-47848f?style=flat-square&logo=electron&logoColor=white" alt="Electron" />
-  <img src="https://img.shields.io/badge/typescript-5.x-3178c6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/react-18-61dafb?style=flat-square&logo=react&logoColor=black" alt="React 18" />
+  <img src="assets/banner.png" alt="CRUX Terminal" width="800">
 </p>
 
 <p align="center">
-  <img src="assets/screenshot.png" alt="CRUX Terminal Screenshot" width="800" />
+  <strong>A modern, GPU-accelerated terminal for macOS.<br>AI-native, local-first, no account required.</strong>
+</p>
+
+<p align="center">
+  <a href="#"><img src="https://img.shields.io/badge/macOS-12%2B-black?style=flat-square&logo=apple&logoColor=white" alt="macOS"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Electron-28-47848F?style=flat-square&logo=electron&logoColor=white" alt="Electron"></a>
+  <a href="#"><img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/MerowFartaj/Crux?style=flat-square" alt="License"></a>
+  <a href="https://github.com/MerowFartaj/Crux/stargazers"><img src="https://img.shields.io/github/stars/MerowFartaj/Crux?style=flat-square" alt="Stars"></a>
+</p>
+
+<p align="center">
+  <img src="assets/screenshot.png" alt="CRUX Terminal Screenshot" width="700">
 </p>
 
 ---
 
-## Why CRUX?
+## 🎯 Why CRUX
 
-Most terminal emulators either lack modern features or lock them behind subscriptions and accounts. CRUX takes a different approach:
+Most terminal apps today either charge a subscription, require an account, or phone home with your data. CRUX takes a different path:
 
-- **Free and open source** — No paywalls, no premium tiers, no feature gates. Everything ships for everyone.
-- **No account required** — Download, open, use. Zero sign-up friction. Your terminal shouldn't need your email.
-- **BYOK AI** — Bring your own API keys for OpenAI, Anthropic, Google, Ollama, or any OpenAI-compatible endpoint. Your keys stay on your machine.
-- **Local-first, no telemetry** — No analytics, no tracking, no phone-home. CRUX works entirely offline when you want it to. A hard off switch for AI means full privacy when you need it.
+- **Completely free** — no premium tiers, no feature gates, no trials
+- **No account required** — download and go, forever
+- **Bring your own AI key** — works with OpenAI, Anthropic, Google, Ollama, LM Studio, and more
+- **Local-first** — zero telemetry, zero tracking, your data never leaves your machine
 
 ---
 
-## Features
+## ⚡ Features
 
 ### Core Terminal
 
-- **GPU-accelerated rendering** via xterm.js WebGL renderer — buttery smooth at thousands of lines per second
-- **Split panes** — vertical and horizontal, with drag-to-resize dividers
-- **Tabbed sessions** with drag-to-reorder and duplicate tab support
-- **Session restore** — reopen exactly where you left off after restart
-- **Block-based output** — each command and its output grouped visually for easy scanning
-- **Inline image rendering** — view images directly in the terminal via iTerm2 protocol support
+- GPU-accelerated rendering via WebGL for buttery-smooth output
+- Split panes — horizontal and vertical, infinitely nestable
+- Tabs with drag-and-drop reordering
+- Session persistence and restore across restarts
+- Inline image rendering
 
-### AI Features
+### AI Assistant
 
-- **Multi-model support** — OpenAI, Anthropic, Google Gemini, Ollama, LM Studio, and any OpenAI-compatible API
-- **Inline streaming responses** — AI output streams directly into your terminal, no context switching
-- **Slash commands** — `/ai`, `/fix`, `/how`, `/explain`, `/commit`, and more for quick AI interactions
-- **Ghost text suggestions** — context-aware autocomplete that appears as you type, accept with Tab
-- **Chat sidebar** — persistent conversation panel with full history and model switching
-- **Hard off mode** — one toggle to completely disable all AI features for full privacy sessions
+- **Multi-model support** — OpenAI, Anthropic, Google, Ollama, LM Studio, and any OpenAI-compatible API
+- Inline streaming responses directly in your terminal
+- Slash commands: `/ai`, `/fix`, `/how`, `/explain`, `/commit`, and more
+- Ghost text suggestions as you type
+- **Hard off mode** — completely disable AI with one toggle for full privacy
 
 ### File Preview Panel
 
-- Syntax-highlighted code files with line numbers and word wrap
-- JSON explorer with collapsible tree view
-- Markdown rendered with full formatting
-- CSV/TSV files in a sortable, filterable table view
-- Image previews (PNG, JPG, SVG, GIF) with zoom
-- Jupyter notebook rendering with cell outputs
+- Syntax-highlighted code with language detection
+- JSON with collapsible tree view
+- Markdown rendered preview
+- CSV displayed as a sortable, filterable table
+- Images and SVGs
+- Jupyter notebook viewer
 
 ### SSH Manager
 
-- Encrypted credential storage using macOS Keychain
-- Connection groups and favorites for fast access
-- Auto-import from `~/.ssh/config`
-- One-click connect with key-based and password authentication
-- Port forwarding management
+- AES-256 encrypted credential storage
+- Connection groups and favorites
+- One-click import from `~/.ssh/config`
+- Multi-hop / jump host support
 
 ### Dropdown Terminal
 
-- **Quake-style dropdown** — slides in from the top with a global hotkey
-- Multi-monitor aware — appears on the active display
-- Configurable height, animation speed, and always-on-top behavior
-- Shares sessions with the main window or runs independently
+- Quake-style slide-down terminal from the top of your screen
+- Customizable global hotkey
+- Multi-monitor aware
+- Independent from the main window
 
 ### And More
 
-- **Command palette** (`Cmd+Shift+P`) with fuzzy search across all actions
-- **System pulse monitor** — CPU, memory, and network at a glance
-- **tmux integration** — detects tmux sessions and provides visual controls
-- **25+ slash commands** — `/theme`, `/alias`, `/snippet`, `/history`, `/export`, and many more
-- **Customizable themes** — ship with a curated set, or define your own in JSON
-- **Smart notifications** — get notified when long-running commands finish
+- **Command Palette** (⌘K) — quick access to every action
+- **Block-based output** — fold, copy, or pin individual command outputs
+- **System Pulse** — live CPU, RAM, and disk usage monitor
+- **tmux integration** — seamless session management
+- **25+ built-in slash commands**
+- **Customizable themes and fonts**
 
 ---
 
-## Keyboard Shortcuts
+## ⌨️ Keyboard Shortcuts
 
 | Action | Shortcut |
-|---|---|
-| New Tab | `Cmd + T` |
-| Close Tab | `Cmd + W` |
-| Split Vertically | `Cmd + D` |
-| Split Horizontally | `Cmd + Shift + D` |
-| Toggle Dropdown Terminal | `Ctrl + ~` |
-| Command Palette | `Cmd + Shift + P` |
-| Toggle AI Chat Sidebar | `Cmd + Shift + A` |
-| Navigate Splits | `Cmd + Option + Arrow` |
-| Toggle File Preview | `Cmd + Shift + F` |
-| Search in Output | `Cmd + F` |
+| --- | --- |
+| New Tab | ⌘T |
+| Close Tab | ⌘W |
+| Split Right | ⌘D |
+| Split Down | ⌘⇧D |
+| Command Palette | ⌘K |
+| Toggle AI | ⌘I |
+| Toggle File Preview | ⌘B |
+| Toggle Dropdown Terminal | ⌘` |
+| Navigate Splits | ⌘⌥←/→/↑/↓ |
+| Clear Terminal | ⌘L |
+| Search | ⌘F |
+| Toggle Full Screen | ⌘⇧F |
 
 ---
 
-## Tech Stack
+## 🛠 Tech Stack
 
-| Layer | Technology |
-|---|---|
-| Framework | Electron 33 |
-| UI | React 18 + Tailwind CSS |
-| Language | TypeScript 5.x |
-| Terminal Engine | xterm.js + WebGL Renderer |
-| Database | SQLite via better-sqlite3 |
-| AI Integration | OpenAI SDK, Anthropic SDK, Ollama REST |
-| Packaging | electron-builder |
+| Technology | Purpose |
+| --- | --- |
+| Electron 28 | Desktop framework |
+| React 18 | UI components |
+| TypeScript 5 | Type safety |
+| xterm.js + WebGL | Terminal rendering |
+| Tailwind CSS | Styling |
+| SQLite (better-sqlite3) | Local data storage |
+| Node-pty | Pseudoterminal |
 
 ---
 
-## Getting Started
+## 🚀 Getting Started
 
-### Prerequisites
-
-- **Node.js** 18+ (recommend using [fnm](https://github.com/Schniz/fnm) or nvm)
-- **macOS** 12 Monterey or later
-- **Git**
-
-### Quick Start
+**Prerequisites:** Node.js 18+, macOS 12+
 
 ```bash
-# Clone the repo
 git clone https://github.com/MerowFartaj/Crux.git
 cd Crux/app
-
-# Install dependencies
 npm install
-
-# Start in development mode
 npm run dev
 ```
 
-The app will launch in development mode with hot reload enabled. DevTools open automatically.
-
-### Build for Production
-
-```bash
-npm run build    # Compile TypeScript + bundle with webpack
-npm run package  # Package as .dmg for distribution
-```
-
 ---
 
-## Project Structure
-
-This is a monorepo containing two projects:
+## 📁 Project Structure
 
 ```
 Crux/
-  app/          Electron terminal application (the product)
-    src/
-      main/       Main process — window management, IPC, native integrations
-      renderer/   React UI — terminal views, AI chat, SSH manager, settings
-      shared/     Shared types and utilities
-  website/      Marketing site for cruxterminal.com (Next.js)
+├── app/          # Electron + React terminal application
+├── website/      # Next.js marketing site (cruxterminal.com)
+└── README.md     # You are here
 ```
 
-See [`website/README.md`](website/README.md) for details on running the marketing site locally.
+---
+
+## 🗺 Roadmap
+
+- 🔌 Plugin system and API
+- 🎨 Custom theme marketplace
+- 🐧 Linux support
+- 🖥️ Windows support
+- ✂️ Snippet manager
+- 👥 Team sync (optional, local-first)
 
 ---
 
-## Roadmap
+## 📄 License
 
-Planned features and improvements — contributions welcome:
-
-- **Plugin system** — extend CRUX with community-built plugins for custom commands, themes, and integrations
-- **Custom themes marketplace** — browse, share, and install themes from the community
-- **Linux support** — bring CRUX to Ubuntu, Fedora, and Arch
-- **Windows support** — native Windows build with ConPTY backend
-- **Vim mode** — modal keybindings for terminal navigation
-- **Collaborative sessions** — share a terminal session in real-time via peer-to-peer connection
+MIT — see [LICENSE](LICENSE) for details.
 
 ---
 
-## Contributing
-
-We welcome contributions! See our [Contributing Guide](.github/CONTRIBUTING.md) for details on how to get started.
-
----
-
-## License
-
-MIT License. See [LICENSE](LICENSE) for details.
-
----
-
-<p align="center">
-  Built with love by <a href="https://github.com/MerowFartaj">Merow</a>
-</p>
+<p align="center">Built with ❤️ by <a href="https://github.com/MerowFartaj">Merow</a></p>
